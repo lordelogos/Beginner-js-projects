@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width= device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<div>
+			<h1 id="biggie"><span id="smallie">Our</span>Store</h1>
+		</div>
+		<div id="nav">
+			<ul id="nav-ul">
+				<a href=""><li class="category">ALL</li></a>
+				<a href=""><li class="category">CAKES</li></a>
+				<a href=""><li class="category">CUPCAKES</li></a>
+				<a href=""><li class="category">SWEETS</li></a>
+				<a href=""><li class="category">DOUGHNUTS</li></a>
+			</ul>
+		</div>
+		<div id="filter">
+			<label id="search-icon"><img src="https://image.flaticon.com/icons/svg/860/860824.svg" id="icon"></label>
+			<input type="text" name="searchbar" id="searchbar" placeholder="item...">
+		</div>
+	</header>
+
+	<section id="display">
+		<div class="item" data-set="sweets">
+			<a href=""><img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="item-img"></a>
+			<div class="label">
+				<p class="item-name">Sweet Item</p>
+				<p class="item-price">$5</p>
+			</div>
+		</div>
+		<div class="item" data-set='cupcakes'>
+			<a href=""><img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="item-img"></a>
+			<div class="label">
+				<p class="item-name">Cupcake Item</p>
+				<p class="item-price">$5</p>
+			</div>
+		</div>
+		<div class="item" data-set ='doughnuts'>
+			<a href=""><img src="https://images.unsplash.com/photo-1527904324834-3bda86da6771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="item-img"></a>
+			<div class="label">
+				<p class="item-name">Doughnut Item</p>
+				<p class="item-price">$5</p>
+			</div>
+		</div>
+		<div class="item" data-set = 'cakes'>
+			<a href=""><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="item-img"></a>
+			<div class="label">
+				<p class="item-name">Cake Item</p>
+				<p class="item-price">$5</p>
+			</div>
+		</div>
+		<div class="item" data-set = 'sweets'>
+			<a href=""><img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="item-img"></a>
+			<div class="label">
+				<p class="item-name">Sweet Item</p>
+				<p class="item-price">$5</p>
+			</div>
+		</div>
+		<div class="item" data-set = 'cupcakes'>
+			<a href=""><img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="item-img"></a>
+			<div class="label">
+				<p class="item-name">Cupcake Item</p>
+				<p class="item-price">$5</p>
+			</div>
+		</div>
+	</section>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

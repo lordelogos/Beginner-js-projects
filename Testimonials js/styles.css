@@ -1,0 +1,85 @@
+body{
+	text-align: center;
+	background-image: url(https://img.freepik.com/free-vector/blue-white-modern-abstract-background_111397-34.jpg?size=626&ext=jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', 'sans-serif';
+}
+
+label{
+	display: block;
+}
+
+button{
+	background-color: transparent;
+	border: none;
+}
+
+.btn{
+	opacity: 1;
+}
+
+.btn:hover{
+	opacity: 0.5;
+}
+
+#client{
+	margin-top: 10vh;
+	font-size: 1.5em;
+	margin-bottom: 5vh;
+	font-weight: 500;
+	color: gold;
+}
+
+#test{
+	font-size: 2em;
+	margin-bottom: 8vh;
+}
+
+#profile{
+	border: solid 1px transparent;
+	border-radius: 50px;
+	height: 100px;
+	width: 150px;
+	margin-top: -50px;
+}
+
+#name{
+	font-size: 1.2em;
+	margin: 10px 0;
+
+}
+
+#stars{
+	margin-top: 5px;
+}
+
+.star{
+	width: 20px;
+	height: 20px;
+	display: inline;
+}
+
+#reviews{
+	width: 70%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+	align-items: center;
+}
+
+#comment{
+	width: 80%;
+	margin: auto;
+}
+
+#quot{
+	height: 50px;
+	width: 50px;
+	margin-bottom: 10px;
+}
+
+#inside{
+	border: solid 1px;
+	margin: 20px;
+}

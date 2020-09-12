@@ -1,0 +1,175 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #f4f4f4;
+}
+
+#head{
+	margin-top: 10vh;
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#budget{
+	border: solid 1px green;
+	margin: 5vh 0;
+}
+
+#budget form{
+	margin: auto;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+#budget form label, #expenses form label{
+	margin: 2vh 0 0 0;
+}
+
+input[type = 'text'], input[type = 'number']{
+	height: 30px;
+	border: solid 1px green;
+	margin: 1vh 0 2vh 0;
+}
+
+#expense, #expenseAmount{
+	border: solid 1px red;
+}
+
+#calc, #addbtn{
+	border: solid 1px green;
+	background-color: transparent;
+	color: green;
+	height: 30px;
+	width: 30%;
+	margin-bottom: 2vh;
+}
+
+#addbtn{
+	color: red;
+	border: red solid 1px;
+}
+
+#addbtn:hover, #calc:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#expenses{
+	border: solid 1px red; 
+	margin: 0 0 10vh 0;
+}
+
+#expenses form{
+	margin: auto;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+#forms{
+	margin: auto;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#displays{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10%;
+	width: 90%;
+	margin: auto;
+}
+
+.moneyDisplay{
+	height: 150px;
+	text-align: center;
+	color: green;
+}
+
+.title{
+	display: block;
+	margin-bottom: 2vh;
+	font-size: 1.3em;
+}
+
+.icon{
+	width: 60px;
+	height: 50px;
+	margin-bottom: 2vh;
+}
+
+.amount{
+	display: block;
+	font-size: 1.3em;
+}
+
+#negative{
+	color: red;
+}
+
+.moneyText{
+	text-align: center;
+}
+
+.smallText{
+	 color: red;
+}
+
+#actions{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.action-icon{
+	margin: 1vh 1vh 0 0; 
+	width: 20px;
+	height: 20px;
+	border: solid 1px;
+	background-color: transparent;
+}
+
+.del{
+	background-color: red;
+	color: white;
+	border: solid 1px red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+}
+
+.svg{
+	height: 20px;
+	width: 20px;
+	margin-left: -9px;
+}
+
+.action-icon:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#error1, #error2{
+	width: 100%;
+	text-align: center;
+	color: red;
+	font-size: 1.1em;
+}
+
+@media (min-width: 770px){
+	body{
+		display: flex;
+		flex-direction: row;
+		margin-left: 5vw;
+	}
+}

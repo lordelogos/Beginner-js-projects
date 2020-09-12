@@ -1,0 +1,91 @@
+@keyframes bgswitch{
+	0%{
+		background-color: brown;
+	}
+
+	33%{
+		background-color: green;
+	}
+
+	67%{
+		background-color: dodgerblue ;
+	}
+
+	100%{
+		background-color: brown;
+	}
+}
+
+
+
+
+
+body{
+	background-color: brown;
+	font-family: 'Roboto', sans-serif;
+	animation-name: bgswitch;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+#container{
+	width: 80%;
+	height: 80vh;
+	margin:auto;
+	margin-top: 10vh;
+	background-color: grey;
+}
+
+#hidden-bord{
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border: solid 3px grey;
+}
+
+#btn{
+	width: 70%;
+	height: 70px;
+	background-color: green;
+	border: solid 5px dodgerblue;
+	color: white;
+	font-size: 2em;
+	display: block;
+	margin: 50px auto 40px auto;
+}
+
+#quote{
+	width: 100%;
+	color: white;
+}
+
+#quot{
+	font-family: 'Spirax', cursive;
+	font-size: 5em;
+	padding: 0;
+	margin: 0;
+}
+
+#quote p{
+	display: inline;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
+
+#name-block{
+	float: right;
+	margin-top: 20px;
+}
+
+#name, #name-block p{
+	display: inline;
+	font-size: 2em;
+	color: dodgerblue;
+}
+
+

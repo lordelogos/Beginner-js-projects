@@ -1,0 +1,25 @@
+body{
+	display: flex;
+	justify-content: center;
+}
+
+#display{
+	margin-top: 30vh;
+	text-align: center;
+}
+
+#name{
+	font-size: 5em;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#btn{
+	border-radius: 10px;
+	width: 100px;
+	height: 50px;
+	border: solid 2px;
+	background-color: inherit;
+}
+

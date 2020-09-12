@@ -1,0 +1,456 @@
+body{
+	font-family: cursive;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #f4f4f4;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 1fr;
+	grid-gap: 10vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	align-items: center;
+	font-size: 1.2em;
+	z-index: 5;
+}
+
+#logo{
+	width: 50px;
+	height: 50px;
+	margin-left: 2vw;
+}
+
+#main-nav li{
+	list-style: none;
+	display: inline;
+	padding-right: 1vw;
+	color: pink;
+}
+
+#main-nav li:hover{
+	color: black;
+}
+
+#main-nav ul{
+	align-self: center;
+}
+
+#cart{
+	width: 100%;
+	height: 25px;
+	align-self: center;
+}
+
+#cartdetails{
+	align-self: center;
+}
+
+#checkout{
+	margin-right: 2vw;
+	height: 50px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	background-color: transparent;
+	border-radius: 5px;
+	padding: auto 5px auto auto;
+	border: solid 2px black;
+}
+
+#checkout:hover{
+	background-color: pink;
+}
+
+#main-display{
+	height: 100vh;
+	display: flex;
+	background-color: rgba(0,0,0,0.4);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+}
+
+#main-display:before{
+	background-image: url(https://images.unsplash.com/photo-1565498253128-c06e0488ddee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	position: absolute;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#main-display p{
+	font-size: 3em;
+	margin: 0;
+	padding: 0;
+	color: #f4f4f4;
+	z-index: 4;
+}
+
+#grand{
+	font-size: 1.4em;
+	color: pink;
+	z-index: 4;
+}
+
+#explore{
+	background-color: transparent;
+	border-radius: 5px;
+	font-size: 2em;
+	font-family: inherit;
+	border: solid 2px black;
+	padding: 5px 10px;
+	margin-top: 2vh;
+	color: black;
+	z-index: 4;
+}
+
+#explore:hover{
+	background-color: pink;
+}
+
+#about-us{
+	height: 80vh;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+#article{
+	width: 60%;
+	margin: auto;
+	align-self: flex-start;
+	height: 60vh;
+}
+
+#main-title{
+	font-size: 3em;
+	margin-bottom: 2vh;
+}
+
+#article p{
+	color: #3d3d3d;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+#explore2{
+	background-color: transparent;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-family: inherit;
+	border: solid 2px black;
+	padding: 5px 10px;
+	margin-top: 2vh;
+	color: black;
+}
+
+#explore2:hover{
+	background-color: pink;
+}
+
+@keyframes imgmove{
+	from{
+		transform: rotateZ(0deg);
+	}
+
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+
+#anim-cake{
+	width: 60%;
+	height: 60vh;
+	margin: auto;
+	border: 20px solid pink;
+	
+}
+
+#anim-cake:hover{
+	animation-name: imgmove;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in-out;
+}
+
+#us{
+	color: pink;
+	font-size: 1.2em;
+}
+
+#image4article{
+	align-self: center;
+}
+
+#section{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#header div{
+	text-align: center;
+}
+
+#biggie{
+	font-size: 4vw;
+	margin: 0;
+	padding: 0;
+	color: pink;
+}
+
+#smallie{
+	font-size: 2.5vw;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+#nav-ul li{
+	display: inline;
+	text-decoration: none;
+	padding: 5px 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	margin: 0 1vw;
+	font-size: 0.8em;
+}
+
+#nav-ul li:hover{
+	font-size: 1.0em;
+}
+
+#icon{
+	width: 15px;
+	height: 15px;
+}
+
+#search-icon{
+	background-color: pink;
+	border: 1px solid transparent;
+	border-radius: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+}
+
+#searchbar{
+	width: 40%;
+	border: none;
+	border-radius: 1px;
+	font-family: inherit;
+	color: black;
+	font-size: 1em;
+	padding: 0 5px;
+}
+
+#filter{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+#display{
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.item-img{
+	width: 350px;
+	height: 250px;
+}
+
+.item{
+	background-color: white;
+}
+
+.item:hover{
+	transform: scale(1.1);
+}
+
+.label{
+	width: 100%;
+}
+
+.item-name{
+	display: inline;
+	float: left;
+	padding-left: 15px;
+}
+
+.item-price{
+	float: right;
+	padding-right: 15px;
+}
+
+
+#modal-view{
+	width: 100%;
+	margin: auto;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 10;
+	display: none;
+}
+
+
+
+#modaldiv{
+	width: 60%;
+	height: 60vh;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20vh;
+}
+
+#productModal{
+	width: 100%;
+	height: 100%;
+	border: 10px solid pink;
+	border-radius: 10px;
+}
+
+#modaldiv button, #exit{
+	background-color: pink;
+	height: 50px;
+	width: 50px;
+	border: none;
+	font-size: 3em;
+	border-radius: 10px;
+	color: white;
+}
+
+#modaldiv button:hover, #exit:hover{
+	transform: scale(1.2);
+}
+
+#exit{
+	float: right;
+	margin-right: 200px;
+	margin-top: 50px;
+	background-color: red;
+	text-align: center;
+	font-size: 1.5em;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+#prev{
+	margin-right: -20px;
+	z-index: 2;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+#next{
+	margin-left: -20px;
+	z-index: 2;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1030px){
+	#display{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	#biggie{
+		font-size: 3em;
+	}
+
+	#smallie{
+		font-size: 0.7em;
+	}
+
+	#nav-ul{
+		display: flex;
+		justify-content: center;
+	}
+
+	#nav-ul li{
+		display: inline;
+		text-decoration: none;
+		padding: 2.5px 5px;
+		border: 1px solid;
+		border-radius: 2px;
+		margin: 0 4px;
+		font-size: 0.8em;
+	}
+
+	.item-img{
+	width: 100%;
+	height: 250px;
+}
+
+}
+
+@media (max-width: 1020px){
+		#display{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	#biggie{
+		font-size: 3em;
+	}
+
+	#smallie{
+		font-size: 0.7em;
+	}
+
+	#nav-ul{
+		display: flex;
+		justify-content: center;
+	}
+
+	#nav-ul li{
+		display: inline;
+		text-decoration: none;
+		padding: 5px 10px;
+		border: 1px solid;
+		border-radius: 2px;
+		margin: 0 10px;
+		font-size: 1em;
+	}
+
+	.item-img{
+	width: 100%;
+	height: 250px;
+}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget App</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+</head>
+<body>
+	<div id="forms">
+		<label id="head">Budget App</label>
+		<div id="budget">
+			<form>
+				<div id="error1"></div>
+				<label>Please Enter Your Budget</label>
+				<input type="number" name="budget" id="budgetDigits">
+				<input type="submit" name="calculate" id="calc" value="Calculate">
+			</form>
+		</div>
+
+		<div id="expenses">
+			<form>
+				<div id="error2"></div>
+				<label>Please Enter Your Expenses</label>
+				<input type="text" name="expense" id="expense">
+				<label>Please Enter Expense Amount</label>
+				<input type="number" name="expenseAmount" id="expenseAmount">
+				<input type="submit" name="add" id="addbtn" value="Add Expense">
+			</form>
+		</div>
+	</div>
+	<div id="displays">
+
+		<div class="moneyDisplay">
+			<label class="title">BUDGET</label>
+			<img class="icon" src="https://svgshare.com/i/PVa.svg"></img>
+			<label class="amount">$ <span id="totalBudget"></span></label>
+		</div>
+		<div class="moneyDisplay" id="negative">
+			<label class="title">EXPENSES</label>
+			<img class="icon" src="https://svgshare.com/i/PVa.svg"></img>
+			<label class="amount">$ <span id="totalExpenses"></span></label>
+		</div>
+		<div class="moneyDisplay">
+			<label class="title">BALANCE</label>
+			<img class="icon" src="https://svgshare.com/i/PXZ.svg"></img>
+			<label class="amount">$ <span id="balance"></span></label>
+		</div>
+
+		<div class="moneyText" id="expensetitle">
+		 	<label class="smallTitle">Expense Title</label>
+		
+		</div>
+		<div class="moneyText" id="expenseamount">
+			<label class="smallTitle">Expense Value</label>
+		</div>
+		<div class="moneyText" id="actiondiv">
+			<label class="smallTitle">Modify</label>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

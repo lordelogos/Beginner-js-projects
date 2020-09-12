@@ -1,0 +1,15 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#btn{
+	margin-top: 40vh;
+	width: 250px;
+	height: 60px;
+	background-color: inherit;
+	border: solid 2px;
+	border-radius: 10px;
+	font-size: 3em;
+}

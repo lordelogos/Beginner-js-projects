@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator JS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width, initial-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<!-- Created by Paul Ehikhuemen -->
+</head>
+<body>
+	<div id="display">
+		<header>
+			<p id="title">TIP CALCULATOR</p>
+		</header>
+		<div id="alertBox">
+		</div>
+		<div id="body">
+			<div id="innertext">
+				<label id="cost">How Much Was Your Bill?</label>
+				<div id="costInput">
+					<div>
+						<img src="https://svgshare.com/i/PJi.svg" class="icon">
+					</div>
+					<input type="number" name="costFig" step="0.01" id="price">
+				</div>
+
+				<label>How Many People Are Splitting The Bill?</label>
+				<div id="split">
+					<div>
+						<img src="https://svgshare.com/i/PJF.svg" class="icon">
+					</div>
+					<input type="number" name="people" id="people">
+				</div>
+
+				<label>How Was Your Service?</label>
+				<select id="tipPercentage">
+					<option selected>Choose...</option>
+					<option value="0.2">Great - 20%</option>
+					<option value="0.1">Good - 10%</option>
+					<option value="0.02">Bad - 2%</option>
+				</select>
+
+				<button id="calculate">Calculate</button>
+				<div id="summary">
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+
+	<footer id="foot">Created by Lordelogos <br>
+		Copyrights &copy; 2020
+	</footer>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
